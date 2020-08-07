@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="db_calculbugetDataSet4" targetNamespace="http://tempuri.org/db_calculbugetDataSet4.xsd" xmlns:mstns="http://tempuri.org/db_calculbugetDataSet4.xsd" xmlns="http://tempuri.org/db_calculbugetDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="db_calculbugetConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db_calculbugetConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Calcul_Buget.Properties.Settings.GlobalReference.Default.db_calculbugetConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CheltuieliTableAdapter" GeneratorDataComponentClassName="CheltuieliTableAdapter" Name="Cheltuieli" UserDataComponentName="CheltuieliTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_calculbugetConnectionString (Settings)" DbObjectName="db_calculbuget.dbo.Cheltuieli" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Contul, Suma, TVA FROM dbo.Cheltuieli</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Contul" DataSetColumn="Contul" />
+              <Mapping SourceColumn="Suma" DataSetColumn="Suma" />
+              <Mapping SourceColumn="TVA" DataSetColumn="TVA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="db_calculbugetDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="db_calculbugetDataSet4" msprop:Generator_UserDSName="db_calculbugetDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cheltuieli" msprop:Generator_TableClassName="CheltuieliDataTable" msprop:Generator_TableVarName="tableCheltuieli" msprop:Generator_TablePropName="Cheltuieli" msprop:Generator_RowDeletingName="CheltuieliRowDeleting" msprop:Generator_RowChangingName="CheltuieliRowChanging" msprop:Generator_RowEvHandlerName="CheltuieliRowChangeEventHandler" msprop:Generator_RowDeletedName="CheltuieliRowDeleted" msprop:Generator_UserTableName="Cheltuieli" msprop:Generator_RowChangedName="CheltuieliRowChanged" msprop:Generator_RowEvArgName="CheltuieliRowChangeEvent" msprop:Generator_RowClassName="CheltuieliRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Contul" msprop:Generator_ColumnVarNameInTable="columnContul" msprop:Generator_ColumnPropNameInRow="Contul" msprop:Generator_ColumnPropNameInTable="ContulColumn" msprop:Generator_UserColumnName="Contul" type="xs:int" />
+              <xs:element name="Suma" msprop:Generator_ColumnVarNameInTable="columnSuma" msprop:Generator_ColumnPropNameInRow="Suma" msprop:Generator_ColumnPropNameInTable="SumaColumn" msprop:Generator_UserColumnName="Suma" type="xs:decimal" />
+              <xs:element name="TVA" msprop:Generator_ColumnVarNameInTable="columnTVA" msprop:Generator_ColumnPropNameInRow="TVA" msprop:Generator_ColumnPropNameInTable="TVAColumn" msprop:Generator_UserColumnName="TVA" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
